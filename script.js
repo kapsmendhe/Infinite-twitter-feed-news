@@ -9,7 +9,7 @@ function randomGen() {
 
 function infinity() {
     var i = 0;
-    while (i < 20) {
+    while (i < 15) {
         const img = document.createElement("img");
         img.src = `${url}${randomGen()}`;
         root.appendChild(img);
