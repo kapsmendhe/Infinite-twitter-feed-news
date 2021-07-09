@@ -17,8 +17,17 @@ function infinity() {
     }
 }
 infinity();
-window.addEventListener("scroll", () => {
+// console.log("scrollY scr: " + window.scrollY)
+// console.log("scrollHeight scr: " + document.documentElement.scrollHeight)
+
+document.addEventListener("scroll", () => {
+    // console.log("scrollY add: " + window.scrollY)
+    // console.log("scrollHeight add: " + document.documentElement.scrollHeight)
     if ((window.scrollY + window.innerHeight + window.innerWidth) >= document.documentElement.scrollHeight) {
         infinity();
+        // console.log("scrollY: " + window.scrollY)
+        // console.log("innerHeight: " + window.innerHeight)
+        // console.log("innerWidth: " + window.innerWidth)
+        // console.log("scrollHeight: " + document.documentElement.scrollHeight)
     }
 })
